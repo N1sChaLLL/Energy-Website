@@ -138,8 +138,149 @@ a {
   gap: 20px;
   transition: all 0.3s ease;
 }
+.card-container {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
 
+        .card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            flex: 1;
+            text-align: center;
+            border: 2px solid transparent;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
+        /* Normal state - icon and title section */
+        .icon-title-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card:hover {
+            border-color: #007bff;
+            box-shadow: 0 4px 12px rgba(0,123,255,0.15);
+        }
+
+        .card img {
+            width: 60px;
+            height: 60px;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                        height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-title {
+            font-weight: 600;
+            margin: 0;
+            color: #333;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-description {
+            margin-top: 15px;
+            color: #666;
+            line-height: 1.6;
+            opacity: 0;
+            max-height: 0;
+            overflow: hidden;
+            transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        margin-top 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Hidden state - simple display none, no fancy transitions */
+        .card.hidden {
+            display: none;
+        }
+
+        /* Show all cards in normal state */
+        .card:not(.hidden):not(.expanded) {
+            display: flex;
+        }
+
+        /* Expanded state */
+        .card.expanded {
+            flex: none;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 20px;
+            padding: 30px;
+            background: #fff;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Left section with icon and title in expanded state */
+        .card.expanded .icon-title-section {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+            flex-shrink: 0;
+            min-width: 200px;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card.expanded img {
+            width: 160px;
+            height: 160px;
+            transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+                        height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card.expanded .card-title {
+            margin: 0;
+            font-size: 1.2em;
+            text-align: left;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card.expanded .card-description {
+            opacity: 1;
+            max-height: 500px;
+            margin-top: 0;
+            flex: 1;
+            transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+                        max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card.expanded .card-title {
+            margin: 0;
+            font-size: 1.2em;
+        }
+
+        .card.expanded .card-description {
+            opacity: 1;
+            max-height: none;
+            margin-top: 0;
+        }
+
+        /* Layout wrapper for expanded content */
+        .card-content-wrapper {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+
+        /* Normal state - content is inline */
+        .card:not(.expanded) .card-content-wrapper {
+            display: block;
+        }
 .card {
   flex: 1 1 250px;
   max-width: 300px;
