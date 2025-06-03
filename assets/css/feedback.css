@@ -302,3 +302,9 @@
           font-size: 1.2rem;
         }
       }
+
+      .header .navbar-nav ul li a.active:hover {
+  color: #ffffff !important;
+  background: #5ca62acc;
+  border-radius: 50px;
+}

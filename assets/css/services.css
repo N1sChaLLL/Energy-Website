@@ -241,6 +241,7 @@ a {
             height: 160px;
             transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
                         height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                        
         }
 
         .card.expanded .card-title {
@@ -249,6 +250,12 @@ a {
             text-align: left;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
+
+        .header .navbar-nav ul li a.active:hover {
+  color: #ffffff !important;
+  background: #5ca62acc;
+  border-radius: 50px;
+}
 
         .card.expanded .card-description {
             opacity: 1;

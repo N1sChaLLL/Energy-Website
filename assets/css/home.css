@@ -51,10 +51,10 @@ section {
 
 
 .hero-section {
-  background-image: url('../images/hero.png');
+  background-image: url('../images/newhome1.jpg');
   background-size: cover;
   background-position: center;
-  height: 75vh;
+  height: 73vh;
   display: flex;
   justify-content: center;
   align-items: baseline;
@@ -83,11 +83,12 @@ section {
 
 .hero-content {
   text-align: center;
-  color: #224B73;
+  color: #79B552;
   background: rgba(255, 255, 255, 0.0);
   padding: 20px;
   margin-top: 2.25em;
 }
+
 
 .hero-content h1 {
   font-size: 66px;
@@ -95,10 +96,10 @@ section {
   margin-bottom: 15px;
 }
 
-.hero-content p {
-  font-size: 24px;
+.hero-content h2 {
+  font-size: 29px;
   font-weight: 400;
-  color: #224B73;
+  color: #f3f4ca;
 }
 @media (max-width: 991px) {
   .section-one {padding-top: 100px;}

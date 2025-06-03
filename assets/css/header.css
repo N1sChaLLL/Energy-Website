@@ -58,7 +58,7 @@ body {
 }
 
 .core:hover img {
-  filter: hue-rotate(270deg) saturate(4.4) brightness(2.1);
+  filter: hue-rotate(225deg) saturate(2.3) brightness(2.1);
   transform: scale(1.1);
   /* Add a very fast transition specifically for filter */
   transition: transform 0.3s ease, filter 0.1s ease;
@@ -193,11 +193,18 @@ body {
   padding-inline: 2em;
   position: relative;
   font-size: 15px;
-  color: #132B42 !important;
+  color: #132B42 !important;  
   font-weight: 500;
   transition: 0.3s;
   display: inline-block;
 }
+
+.header .navbar-nav ul li a.active:hover {
+  color: #ffffff !important;
+  background: #5ca62acc;
+  border-radius: 50px;
+}
+
 .header .navbar-nav ul li a.active {
   background: #5ca62acc;
   border-radius: 50px;
@@ -295,7 +302,7 @@ body {
 }
 
 .footer-links .social-icons a:hover img {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 .container-card {

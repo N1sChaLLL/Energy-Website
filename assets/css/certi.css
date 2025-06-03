@@ -9,6 +9,7 @@ a {
   font-family: oxygen;
 }
 
+
 .hero {padding-top: 120px;}
 
 .hero h1 {
@@ -16,6 +17,11 @@ a {
     font-size: 56px;
     margin-top: 0.75em;
     font-weight: bold;
+}
+.header .navbar-nav ul li a.active:hover {
+  color: #ffffff !important;
+  background: #5ca62acc;
+  border-radius: 50px;
 }
 
 .hero p {
