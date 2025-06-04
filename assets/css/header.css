@@ -64,6 +64,11 @@ body {
   transition: transform 0.3s ease, filter 0.1s ease;
 }
 
+.core:hover h2{
+  color: #7CB342;
+  
+}
+
 .core h2 {
   margin-top: 15px;
   font-size: 1.2rem;
@@ -81,8 +86,8 @@ body {
   bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #7CB342;
-  color: white;
+  background-color: #ffffff;
+  color: #79B552;
   padding: 10px 15px;
   border-radius: 8px;
   font-size: 14px;
@@ -91,7 +96,6 @@ body {
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
   z-index: 10;
-  box-shadow: 0 4px 12px rgba(124, 179, 66, 0.3);
 }
 
 .core::before {
