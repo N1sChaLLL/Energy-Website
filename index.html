@@ -88,15 +88,42 @@
                     <a class="nav-link active" href="">Home</a>
                     <a class="nav-link" href="services.html">Services</a>
                     <a class="nav-link" href="certificates.html">Certificates</a>
-                    <a class="nav-link" href="feedback.html">Feedback</a>
                     <a class="nav-link" href="contact-us.html">Contact Us</a>
                   </li>
+                </ul>
+                <ul style="margin-left: 10px; background-color: #79B552;">
+                  <a class="nav-link active" href="#" style="color: white; font-size: 15px;" onclick="openPopup()">Our Brochure</a>
+                </ul>
+                <ul style="margin-left: 10px; background-color: #79B552;">
+                  <a class="nav-link active" href="#" style="color: white; font-size: 15px;" onclick="openPopup()">Industrial Gas Brochure</a>
                 </ul>
               </div>
             </div>
           </div>
         </nav>
       </section>
+
+      <div id="emailPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:1000;">
+  <div style="background:white; padding:30px; width:750px; height: 450px; margin:10% auto; border-radius:10px; text-align:center; position:relative;">
+    
+    <!-- Close Button -->
+    <span onclick="closePopup()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
+    
+    <h2 style="font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color:#224B73">Download our brochure</h2>
+    <p>Enter your email to receive the brochure!</p>
+    
+    <!-- Form -->
+    <form action="https://formsubmit.co/farewell31722@gmail.com" method="POST" id="emailForm" onsubmit="submitEmail(event)">
+      <input type="email" id="emailInput" name="email" required placeholder="Enter your email" style="padding:10px; width:90%; margin-bottom:15px;">
+      <br>
+       <input type="hidden" name="_autoresponse" value="Thank you for your interest in Energy Next. You can download our brochure from this link: https://drive.google.com/file/d/1AbCdEfGhIjKlMn/view?usp=sharing">
+      <button type="submit" style="padding:10px 20px; background-color:#79B552; color:white; border:none; border-radius:5px;">Submit</button>
+    </form>
+  </div>
+</div>
 
       <!-- Hero Section -->
       <section class="section-one">
@@ -114,6 +141,52 @@
     </div>
 
     <!-- Section Two -->
+     <div class="client-section">
+  <h1>Our team’s experience with respective clients</h1>
+  <div class="slider-wrapper">
+    <div class="client-logos">
+      <img src="assets/imagesss/logo1.png" alt="Client 1" />
+      <img src="assets/imagesss/logo2.png" alt="Client 2" />
+      <img src="assets/imagesss/logo3.png" alt="Client 3" />
+      <img src="assets/imagesss/logo4.png" alt="Client 4" />
+      <img src="assets/imagesss/logo5.png" alt="Client 5" style="height: 200px; width: 200px;"/>
+      <img src="assets/imagesss/logo6.png" alt="Client 6" />
+      <img src="assets/imagesss/logo7.png" alt="Client 7" style="height: 180px; width: 180px; "/>
+      <img src="assets/imagesss/logo8.png" alt="Client 8" />
+      <img src="assets/imagesss/logo9.png" alt="Client 9" />
+      <img src="assets/imagesss/logo10.png" alt="Client 10" />
+      <img src="assets/imagesss/logo11.png" alt="Client 11" />
+      <img src="assets/imagesss/logo12.png" alt="Client 12" />
+      <img src="assets/imagesss/logo13.png" alt="Client 13" />
+      <img src="assets/imagesss/logo14.png" alt="Client 14" />
+      <img src="assets/imagesss/logo15.png" alt="Client 15" />
+      <img src="assets/imagesss/logo16.png" alt="Client 16" />
+      <img src="assets/imagesss/logo17.png" alt="Client 17" />
+      <img src="assets/imagesss/logo18.png" alt="Client 18" />
+
+      <!-- Duplicate logos for infinite effect -->
+      <img src="assets/imagesss/logo1.png" alt="Client 1" />
+      <img src="assets/imagesss/logo2.png" alt="Client 2" />
+      <img src="assets/imagesss/logo3.png" alt="Client 3" />
+      <img src="assets/imagesss/logo4.png" alt="Client 4" />
+      <img src="assets/imagesss/logo5.png" alt="Client 5" />
+      <img src="assets/imagesss/logo6.png" alt="Client 6" />
+      <img src="assets/imagesss/logo7.png" alt="Client 7" />
+      <img src="assets/imagesss/logo8.png" alt="Client 8" />
+      <img src="assets/imagesss/logo9.png" alt="Client 9" />
+      <img src="assets/imagesss/logo10.png" alt="Client 10" />
+      <img src="assets/imagesss/logo11.png" alt="Client 11" />
+      <img src="assets/imagesss/logo12.png" alt="Client 12" />
+      <img src="assets/imagesss/logo13.png" alt="Client 13" />
+      <img src="assets/imagesss/logo14.png" alt="Client 14" />
+      <img src="assets/imagesss/logo15.png" alt="Client 15" />
+      <img src="assets/imagesss/logo16.png" alt="Client 16" />
+      <img src="assets/imagesss/logo17.png" alt="Client 17" />
+      <img src="assets/imagesss/logo18.png" alt="Client 18" />
+      
+    </div>
+  </div>
+</div>
     <section class="section-two">
       <div class="container">
           <div class="box" data-aos="fade-up" style="background-color: #79B552;">
@@ -161,25 +234,26 @@
               </div>
               <div class="container-card">
         <div class="description">
-            <p>Welcome to Energy Next Specialised Piping Fitting LLC, a trusted provider of Central Gas System solutions in the UAE. With expertise in design, installation, and maintenance, we deliver customised systems for commercial, residential, and industrial projects.</p>
-            <p>Certified to ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018 standards, we are committed to quality, safety, and environmental responsibility. From design to commissioning, our proven solutions ensure reliable and efficient gas supply.</p>
-            <p>At Energy Next, we’re dedicated to advancing the gas sector in the UAE with innovative and dependable services tailored to your needs.</p>
+            <p>Welcome to <b>Energy Next Specialised Piping Fitting LLC</b>, your trusted partner for central gas system uae solutions. From feasibility studies to turnkey commissioning, we design, install, and maintain centralised gas networks that deliver uninterrupted LPG supply and advanced pressure regulation. Our cutting-edge engineering integrates automated monitoring and leak-detection safeguards, ensuring peak performance and uncompromising safety in every commercial, residential, or industrial installation.</p>
+            <p>Certified to ISO 9001:2015, ISO 14001:2015, and ISO 45001:2018, Energy Next blends rigorous quality management with environmental stewardship. Our proven methodology—from precise pipeline routing and modular skid design to on-site assembly and validation testing—guarantees system longevity and compliance with UAE safety codes. We are a civil defence contracting company. </p>
         </div>
 
         <div id="energyNextMoreDetails" class="more-details-content">
-            <h3 class="text-xl font-semibold text-gray-800 mb-3">Our Comprehensive Approach</h3>
+
             <p class="text-gray-700 leading-relaxed mb-2">
-                Our team of experienced professionals brings over 15 years of combined industry expertise to every project. We understand the unique challenges of gas system implementation in the UAE's diverse climate and regulatory environment.
-            </p>
-            <p class="text-gray-700 leading-relaxed mb-2">
-                Our comprehensive services include Front-End Engineering Design (FEED), where we create detailed project specifications and feasibility studies. Our consultation services help clients make informed decisions about their gas infrastructure investments.
+                Our holistic approach combines:
             </p>
             <p class="text-gray-700 leading-relaxed mb-2">
-                We specialize in Central Gas System Installation for various applications including residential complexes, commercial buildings, industrial facilities, and hospitality projects. Our installations are designed for optimal performance, safety, and longevity.
+                <ul style="color: #375C80;">
+                    <li><b>Custom engineering</b> for optimised pipe layouts and centralised manifold stations</li>
+                    <li><b>Advanced materials</b>(stainless steel, PE-RT, and high-grade copper) for corrosion resistance</li>
+                    <li><b>Smart infrastructure</b> features, including IoT-enabled pressure sensors and remote diagnostics</li>
+                    <li><b>Green practices</b>, minimizing off-gassing and waste during installation</li>
+                </ul>
+
             </p>
-            <p class="text-gray-700 leading-relaxed">
-                With our 24/7 Emergency Call Response Center, we provide immediate assistance during gas-related emergencies. Our maintenance programs ensure your systems operate at peak efficiency throughout their lifecycle.
-            </p>
+            <p class="text-gray-700 leading-relaxed mb-2">
+                Whether you’re retrofitting an existing building or pioneering a greenfield development, our solutions scale seamlessly—backed by 24/7 support and preventive maintenance programs that uphold uninterrupted gas distribution.
         </div>
 
         <button
@@ -195,12 +269,8 @@
         </div>
 
         <div class="box row" data-aos="fade-up">
-  <div class="col-lg-5">
-    <img src="assets/new2.svg" alt="" style="position: relative; left: 700px;">
-    <img src="assets/new3.svg" alt="" style="position: relative; left: 700px;">
-  </div>
-  <div class="col-lg-7">
-    <div class="content" style="position: relative; right: 500px;">
+        <div class="col-lg-7">
+    <div class="content">
       <div class="head">
         <h1>Leading Gas Distribution Companies in UAE</h1>
       </div>
@@ -213,9 +283,7 @@
           <div class="service">
             <h3 class="title">Industrial gas distribution</h3>
             <p class="short">
-              Our turnkey industrial gas distribution services power factories, warehouses, and process facilities...
-            </p>
-            <p class="full">
+              Our turnkey industrial gas distribution services power factories, warehouses, and process facilities.
               We engineer high-capacity manifolds and large-bore piping to handle heavy-duty flow rates, ensuring your production lines never pause. From bulk LPG storage tanks to custom vaporisation units, we provide robust solutions that meet stringent international standards.
             </p>
           </div>
@@ -246,11 +314,18 @@
         </div>
       </div>
     </div>
+  </div>  
+  <div class="col-lg-5">
+    <img src="assets/new2.svg" alt="" >
+    <img src="assets/new3.svg" alt="" >
   </div>
 </div>
 
         <div class="box row" data-aos="fade-up">
-          <div class="col-lg-7" style="position: relative; left: 550px;">
+          <div class="col-lg-5">
+            <img src="assets/images/s3-2.svg" alt="">
+          </div>
+          <div class="col-lg-7" >
             <div class="content">
               <div class="head">
                 <h1 class="mb-4">Vision and Mission</h1>
@@ -264,9 +339,6 @@
                 <p> Building the Backbone of Energy Infrastructure—Energy Next is dedicated to advancing the UAE’s gas sector with future-ready technologies, sustainable practices, and unwavering commitment to safety. Partner with us for central gas system uae solutions that drive efficiency, cut costs, and empower your next-generation facility.</p>
               </div>
             </div>
-          </div>
-          <div class="col-lg-5">
-            <img src="assets/images/s3-2.svg" alt="" style="position: relative; right: 750px; scale: 1.2;">
           </div>
         </div>
 
@@ -303,36 +375,60 @@
     </section>
 
     <!-- Footer -->
-    <section class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 order-lg-1 order-2">
-            <img class="logo" src="assets/icons/energy_next_logo.svg" alt="">
-          </div>
-          <div class="col-lg-3 order-1 order-lg-2">
-            <div class="footer-links">
-  <ul>
-    <li><a href="#">Privacy Policy</a></li>
-    <li><a href="#">Terms & Conditions</a></li>
-    <li><a href="#">Cookie Policy</a></li>
-    <li class="social-icons">
-      <a href="https://www.linkedin.com/in/energy-next-0bb9a2339" target="_blank">
-        <img src="assets/icons/linkedin.svg" alt="LinkedIn" style="width: 32px; height: 32px;">
-      </a>
-      <a href="https://www.instagram.com/yourprofile" target="_blank">
-        <img src="assets/icons/insta.png" alt="Instagram" style="width: 44px; height: 44px; margin-left: 10px;">
-      </a>
-      <a href="https://www.facebook.com/people/Energy-next-Specialized-Piping-Fitting-LLC/61569271131539/" target="_blank">
-        <img src="assets/icons/facebook.png" alt="Facebook" style="width: 42px; height: 42px; margin-left: 6px;">
-      </a>
-    </li>
-  </ul>
-</div>
+    <section class="footer py-5">
+  <div class="container">
+    <div class="row align-items-start">
 
+      <!-- Left: Logo -->
+      <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-lg-start text-center">
+        <img class="logo" src="assets/icons/energy_next_logo.svg" alt="Logo" style="position: relative; right: 150px;">
+      </div>
+
+      <!-- Center: Phone & Address -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
+        <div class="row">
+          <!-- Phone -->
+          <div class="col-md-6 mb-3 mb-md-0" style="position: relative; left: 250px;">
+            <img src="assets/icons/Phone.png" alt="">
+            <p class="mb-1" style="color: #224B73; position: relative; left: 20px; bottom: 22px;">+971 4 5919886</p>
+            <p style="color: #224B73; position: relative; left: 20px; bottom: 22px;">+971 55 3018141</p>
+          </div>
+
+          <!-- Address -->
+          <div class="col-md-6" style="position: relative; top: 35px; left: 240px;">
+            <img src="assets/icons/Mail.png" alt="">
+            <p class="mb-1"style="color: #224B73;position: relative; left: 20px; bottom: 22px;">PO Box 19896,</p>
+            <p class="mb-1"style="color: #224B73;position: relative; left: 20px; bottom: 22px;">Office#443,</p>
+            <p class="mb-1"style="color: #224B73;position: relative; left: 20px; bottom: 22px;">Fahad 4 Building,</p>
+            <p class="mb-1"style="color: #224B73;position: relative; left: 20px; bottom: 22px;">Al Quasis Industrial 2,</p>
+            <p style="color: #224B73;position: relative; left: 20px; bottom: 22px;">Dubai - UAE</p>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Right: Links & Social -->
+      <div class="col-lg-3 col-md-12 text-lg-end text-center" style="position: relative; top: 20px;">
+        <ul class="list-unstyled mb-3" style="position: relative; left: 40px;">
+          <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-decoration-none">Terms & Conditions</a></li>
+          <li><a href="#" class="text-decoration-none">Cookie Policy</a></li>
+        </ul>
+        <div class="social-icons d-flex justify-content-lg-end justify-content-center gap-2"style="position: relative; left: 70px;">
+          <a href="https://www.linkedin.com/in/energy-next-0bb9a2339" target="_blank" style="position: relative; top: 3px;">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn" width="28" height="28">
+          </a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank">
+            <img src="assets/icons/insta.png" alt="Instagram" width="36" height="36">
+          </a>
+          <a href="https://www.facebook.com/people/Energy-next-Specialized-Piping-Fitting-LLC/61569271131539/" target="_blank">
+            <img src="assets/icons/facebook.png" alt="Facebook" width="34" height="34">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
     <!-- Back to Top 
     <a href="#" class="scroll-to-top">
@@ -464,5 +560,24 @@ document.querySelectorAll('a[href]').forEach(link => {
     });
   }
 });
+</script>
+<script>
+  function openPopup() {
+    document.getElementById("emailPopup").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("emailPopup").style.display = "none";
+  }
+
+  function submitEmail(event) {
+    event.preventDefault(); // Prevents form from refreshing the page
+
+    const email = document.getElementById("emailInput").value;
+    console.log("Email submitted:", email); // Replace this with your backend logic
+
+    alert("Thank you! We'll be in touch.");
+    closePopup();
+  }
 </script>
 </html>

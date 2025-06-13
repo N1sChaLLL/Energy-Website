@@ -54,7 +54,7 @@
     />
   </head>
 
-  <body style="cursor: url('assets/imagesss/cursor.png'), auto;">
+  <body style="cursor: url('assets/icons/gass.png'), auto;">
     <div class="">
       <!-- Header - Navbar -->
       <section class="header">
@@ -88,20 +88,46 @@
                     <a class="nav-link" href="index.html">Home</a>
                     <a class="nav-link" href="services.html">Services</a>
                     <a class="nav-link active" href="certificates.html">Certificates</a>
-                    <a class="nav-link" href="feedback.html">Feedback</a>
                     <a class="nav-link" href="contact-us.html">Contact Us</a>
                   </li>
+                </ul>
+                <ul style="margin-left: 10px; background-color: #79B552;">
+                  <a class="nav-link active" href="#" onclick="openPopup()" style="color: white; font-size: 15px;">Our Brochure</a>
+                </ul>
+                <ul style="margin-left: 10px; background-color: #79B552;">
+                  <a class="nav-link active" href="#" style="color: white; font-size: 15px;" onclick="openPopup()">Industrial Gas Brochure</a>
                 </ul>
               </div>
             </div>
           </div>
         </nav>
       </section>
+      <div id="emailPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:1000;">
+  <div style="background:white; padding:30px; width:750px; height: 450px; margin:10% auto; border-radius:10px; text-align:center; position:relative;">
+    
+    <!-- Close Button -->
+    <span onclick="closePopup()" style="position:absolute; top:10px; right:15px; cursor:pointer; font-size:20px;">&times;</span>
+    
+    <h2 style="font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color:#224B73">Download our brochure</h2>
+    <p>Enter your email to receive the brochure!</p>
+    
+    <!-- Form -->
+    <form action="https://formsubmit.co/farewell31722@gmail.com" method="POST" id="emailForm" onsubmit="submitEmail(event)">
+      <input type="email" id="emailInput" name="email" required placeholder="Enter your email" style="padding:10px; width:90%; margin-bottom:15px;">
+      <br>
+       <input type="hidden" name="_autoresponse" value="Thank you for your interest in Energy Next. You can download our brochure from this link: https://drive.google.com/file/d/1AbCdEfGhIjKlMn/view?usp=sharing">
+      <button type="submit" style="padding:10px 20px; background-color:#79B552; color:white; border:none; border-radius:5px;">Submit</button>
+    </form>
+  </div>
+</div>
 
       <!-- Hero Section -->
       <section class="hero" data-aos="fade-up">
         <div class="container">
-            <h1>Certificates</h1>
+            <h1 style="color: #224B73; position: relative; bottom: 30px;">Certificates</h1>
             <p class="mt-4 text-center">We have been certified in all aspects and are up to date with everything. Below are the certificates to view</p>
         </div>
       </section>
@@ -110,7 +136,9 @@
  
     <!-- Section Two -->
     <section class="section-two">
+      
         <div class="container text-center">
+          <h2 style="margin-top: 40px; color: #224B73;" data-aos="fade-up"> <b>Civil Defense Certificates</b></h2>
             <div class="row justify-content-center">
               <div class="col-lg-4 mt-4" data-aos="fade-up">
                 <img src="assets/certificates/1.png" alt="">
@@ -119,37 +147,39 @@
                 <img src="assets/certificates/2.png" alt="">
               </div>
               <div  data-aos="fade-up">
-                <p>Gas System License from Dubai Civil Defense (Installation & Maintenance)</p>
+                <p style="color: #224B73;">Gas System License from Dubai Civil Defense (Installation & Maintenance)</p>
               </div>
               
             </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-3 mt-4" data-aos="fade-up">
+             <div class="row justify-content-center">
+              <h2 style="margin-top: 40px; color: #224B73;" data-aos="fade-up"> <b>Commercial Certificates</b></h2>
+              <div class="col-lg-4 mt-4" data-aos="fade-up">
                 <img src="assets/certificates/3.png" alt="">
-                <p class="mt-2">Commercial/Trade License 
+                <p class="mt-2" style="color: #224B73;">Commercial/Trade License 
 (Dubai Economic and Tourism)</p>
+              </div>
+              <div class="col-lg-4 mt-4" data-aos="fade-up">
+                <img src="assets/certificates/7.png" alt="">
+                <p class="mt-2" style="color: #224B73;">Membership Certificate
+(Dubai Chamber of Commerce)</p>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <h2 style="margin-top: 40px; color: #224B73;" data-aos="fade-up"> <b>ISO Certificates</b></h2>
+              <div class="col-lg-3 mt-4" data-aos="fade-up">
+                <img src="assets/certificates/6.png" alt="">
+                <p class="mt-2" style="color: #224B73;">Certification of Registration - 
+Occupational Health & Safety (ISO 45001:2018)</p>
               </div>
               <div class="col-lg-3 mt-4" data-aos="fade-up">
                 <img src="assets/certificates/4.png" alt="">
-                <p class="mt-2">Certification of Registration - 
+                <p class="mt-2" style="color: #224B73;">Certification of Registration - 
 Quality Management System (ISO 9001:2015)</p>
               </div>
               <div class="col-lg-3 mt-4" data-aos="fade-up">
                 <img src="assets/certificates/5.png" alt="">
-                <p class="mt-2">Certification of Registration - Environment 
+                <p class="mt-2" style="color: #224B73;">Certification of Registration - Environment 
 Management System (ISO 14001:2015)</p>
-              </div>
-            </div>
-            <div class="row justify-content-center">
-              <div class="col-lg-4 mt-4" data-aos="fade-up">
-                <img src="assets/certificates/6.png" alt="">
-                <p class="mt-2">Certification of Registration - 
-Occupational Health & Safety (ISO 45001:2018)</p>
-              </div>
-              <div class="col-lg-4 mt-4" data-aos="fade-up">
-                <img src="assets/certificates/7.png" alt="">
-                <p class="mt-2">Membership Certificate
-(Dubai Chamber of Commerce)</p>
               </div>
             </div>
         </div>
@@ -157,36 +187,61 @@ Occupational Health & Safety (ISO 45001:2018)</p>
 
     
 
-    <!-- Footer -->
-    <section class="footer">
-      <div class="container">
+    <section class="footer py-5">
+  <div class="container">
+    <div class="row align-items-start">
+
+      <!-- Left: Logo -->
+      <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-lg-start text-center">
+        <img class="logo" src="assets/icons/energy_next_logo.svg" alt="Logo" style="position: relative; right: 150px;">
+      </div>
+
+      <!-- Center: Phone & Address -->
+      <div class="col-lg-6 col-md-12 mb-4 mb-lg-0">
         <div class="row">
-          <div class="col-lg-3 order-lg-1 order-2">
-            <img class="logo" src="assets/icons/energy_next_logo.svg" alt="">
+          <!-- Phone -->
+          <div class="col-md-6 mb-3 mb-md-0" style="position: relative; left: 250px;">
+            <img src="assets/icons/Phone.png" alt="">
+            <p class="mb-1" style="color: #224B73;position: relative; left: 20px; bottom: 22px;">+971 4 5919886</p>
+            <p style="color: #224B73;position: relative; left: 20px; bottom: 22px;">+971 55 3018141</p>
           </div>
-          <div class="col-lg-3 order-1 order-lg-2">
-           <div class="footer-links">
-  <ul>
-    <li><a href="">Privacy Policy</a></li>
-    <li><a href="">Terms & Conditions</a></li>
-    <li><a href="">Cookie Policy</a></li>
-    <li class="social-icons">
-      <a href="https://www.linkedin.com/in/energy-next-0bb9a2339" target="_blank">
-        <img src="assets/icons/linkedin.svg" alt="LinkedIn" style="width: 32px; height: 32px;">
-      </a>
-      <a href="https://www.instagram.com/yourprofile" target="_blank">
-        <img src="assets/icons/insta.png" alt="Instagram" style="width: 44px; height: 44px; margin-left: 10px;">
-      </a>
-      <a href="https://www.facebook.com/people/Energy-next-Specialized-Piping-Fitting-LLC/61569271131539/" target="_blank">
-        <img src="assets/icons/facebook.png" alt="Facebook" style="width: 42px; height: 42px; margin-left: 6px;">
-      </a>
-    </li>
-  </ul>
-</div>
+
+          <!-- Address -->
+          <div class="col-md-6" style="position: relative; top: 35px; left: 250px;">
+            <img src="assets/icons/Mail.png" alt="">
+            <p class="mb-1"style="color: #224B73;position: relative; left: 20px; bottom: 22px;">PO Box 19896,</p>
+            <p class="mb-1"style="color: #224B73;position: relative; left: 20px; bottom: 22px;">Office#443,</p>
+            <p class="mb-1"style="color: #224B73;position: relative; left: 20px; bottom: 22px;">Fahad 4 Building,</p>
+            <p class="mb-1"style="color: #224B73;position: relative; left: 20px; bottom: 22px;">Al Quasis Industrial 2,</p>
+            <p style="color: #224B73;position: relative; left: 20px; bottom: 22px;">Dubai - UAE</p>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Right: Links & Social -->
+      <div class="col-lg-3 col-md-12 text-lg-end text-center" style="position: relative; top: 20px;">
+        <ul class="list-unstyled mb-3" style="position: relative; left: 40px;">
+          <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+          <li><a href="#" class="text-decoration-none">Terms & Conditions</a></li>
+          <li><a href="#" class="text-decoration-none">Cookie Policy</a></li>
+        </ul>
+        <div class="social-icons d-flex justify-content-lg-end justify-content-center gap-2" style="position: relative; left: 70px;">
+          <a href="https://www.linkedin.com/in/energy-next-0bb9a2339" target="_blank" style="position: relative; top: 3px;">
+            <img src="assets/icons/linkedin.svg" alt="LinkedIn" width="28" height="28">
+          </a>
+          <a href="https://www.instagram.com/yourprofile" target="_blank">
+            <img src="assets/icons/insta.png" alt="Instagram" width="36" height="36">
+          </a>
+          <a href="https://www.facebook.com/people/Energy-next-Specialized-Piping-Fitting-LLC/61569271131539/" target="_blank">
+            <img src="assets/icons/facebook.png" alt="Facebook" width="34" height="34">
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- Back to Top 
     <a href="#" class="scroll-to-top">
@@ -258,5 +313,24 @@ document.querySelectorAll('a[href]').forEach(link => {
     });
   }
 });
+</script>
+<script>
+  function openPopup() {
+    document.getElementById("emailPopup").style.display = "block";
+  }
+
+  function closePopup() {
+    document.getElementById("emailPopup").style.display = "none";
+  }
+
+  function submitEmail(event) {
+    event.preventDefault(); // Prevents form from refreshing the page
+
+    const email = document.getElementById("emailInput").value;
+    console.log("Email submitted:", email); // Replace this with your backend logic
+
+    alert("Thank you! We'll be in touch.");
+    closePopup();
+  }
 </script>
 </html>
