@@ -67,6 +67,8 @@ a {
 .footer ul li a {
   font-size: 16px;
   color: #224B73;
+  position: relative;
+  left: 220px;
 }
 
 @media (max-width: 991px) {
@@ -80,4 +82,21 @@ a {
     margin: auto;
     margin-top: 2em;
   }
+}
+
+.footer {
+  background-color: #fff;
+  border-top: 2px solid #eee;
+}
+
+.footer a {
+  color: #224B73; /* Keeps text dark */
+}
+
+.footer .social-icons img {
+  transition: transform 0.3s ease;
+}
+
+.footer .social-icons img:hover {
+  transform: scale(1.1);
 }

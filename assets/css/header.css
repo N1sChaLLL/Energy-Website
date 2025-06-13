@@ -203,7 +203,7 @@ body {
   display: inline-block;
 }
 
-.header .navbar-nav ul li a.active:hover {
+.header .navbar-nav ul li a.active {
   color: #ffffff !important;
   background: #5ca62acc;
   border-radius: 50px;
@@ -212,7 +212,10 @@ body {
 .header .navbar-nav ul li a.active {
   background: #5ca62acc;
   border-radius: 50px;
+  color: white;
 }
+
+
 /* .header .navbar-nav ul li a::after {
   content: "";
   position: absolute;

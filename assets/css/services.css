@@ -397,3 +397,39 @@ a {
   }
   .section-three img {width: 100%;}
 }
+
+.service-block {
+  display: flex;
+  align-items: center;
+  background-color: #f8fff0; /* light greenish background */
+  border-radius: 30px;
+  padding: 40px;
+  margin: 40px auto;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+  max-width: 1200px;
+  gap: 40px;
+}
+
+.service-icon {
+  flex: 1;
+  text-align: center;
+}
+
+.service-icon img {
+  width: 120px;
+  height: auto;
+}
+
+.service-icon h2 {
+  font-size: 18px;
+  font-weight: 700; /* Bold */
+  margin-top: 15px;
+  color: #333;
+}
+
+.service-description {
+  flex: 2;
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
