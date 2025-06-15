@@ -274,7 +274,7 @@
           </div>
 
           <!-- Read More Content (Initially Hidden) -->
-          <div id="moreContent" class="collapsed">
+          <div id="moreContent" class="collapsed" data-aos="fade-up">
             <div class="service">
               <h3 class="title">Commercial gas distribution</h3>
               <p style="text-align: justify;">
@@ -509,6 +509,82 @@
     }
   });
 </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const btn = document.getElementById("readMoreBtn");
+    const content = document.getElementById("moreContent");
+
+    btn.addEventListener("click", function () {
+      const isCollapsed = content.classList.contains("collapsed");
+
+      if (isCollapsed) {
+        content.classList.remove("collapsed");
+        btn.textContent = "Read Less";
+      } else {
+        content.classList.add("collapsed");
+        btn.textContent = "Read More";
+      }
+    });
+  });
+</script>
+
+<script>
+  function toggleReadMoreContent() {
+    const content = document.getElementById('moreContent');
+    const button = document.getElementById('readMoreBtn');
+
+    if (!content || !button) return;
+
+    const isExpanded = content.classList.contains('expanded');
+
+    if (isExpanded) {
+      // Collapse with animation
+      content.style.height = content.scrollHeight + 'px'; // Set current height
+      requestAnimationFrame(() => {
+        content.style.transition = 'height 0.5s ease';
+        content.style.height = '0px';
+      });
+
+      button.textContent = 'Read More';
+      content.classList.remove('expanded');
+    } else {
+      // Expand with animation
+      content.style.height = '0px'; // Ensure it starts from 0
+      content.classList.add('expanded');
+      const targetHeight = content.scrollHeight + 'px';
+      
+
+      requestAnimationFrame(() => {
+        content.style.transition = 'height 0.5s ease';
+        content.style.height = targetHeight;
+      });
+
+      button.textContent = 'Read Less';
+
+      // Reset height after transition for responsiveness
+      content.addEventListener('transitionend', function resetHeight() {
+        content.style.height = 'auto';
+        content.removeEventListener('transitionend', resetHeight);
+      });
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.getElementById('readMoreBtn');
+    if (btn) {
+      btn.addEventListener('click', toggleReadMoreContent);
+    }
+
+    // Initialize content to have overflow hidden
+    const content = document.getElementById('moreContent');
+    if (content) {
+      content.style.overflow = 'hidden';
+      content.style.height = '0px';
+    }
+  });
+</script>
+
 
 
   </body>
