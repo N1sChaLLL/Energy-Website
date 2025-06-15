@@ -310,3 +310,16 @@ section {
     transform: translateX(-50%);
   }
 }
+
+.collapsed {
+  display: none;
+}
+
+#moreContent {
+  overflow: hidden;
+  height: 0;
+  transition: height 0.5s ease;
+}
+#moreContent.expanded {
+  /* This class triggers JavaScript to calculate height */
+}
